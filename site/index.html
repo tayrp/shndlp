@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ShnDLP GUI Wrapper</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="ShnDLP GUI Wrapper is a desktop GUI that automatically downloads videos using yt-dlp by monitoring your clipboard. Requires yt-dlp installed and available in PATH.">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: #0e0e11;
+      color: #e6e6e6;
+      line-height: 1.5;
+    }
+
+    /* Header */
+    .site-header {
+      border-bottom: 1px solid #2a2a2a;
+      background: #0e0e11;
+    }
+
+    .header-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 16px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      font-size: 18px;
+    }
+
+    .brand .subtitle {
+      color: #9a9a9a;
+      margin-left: 6px;
+      font-weight: normal;
+    }
+
+    .download-btn {
+      padding: 8px 14px;
+      border: 1px solid #3a3a3a;
+      border-radius: 6px;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .download-btn:hover {
+      background: #222228;
+    }
+
+    /* Layout */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 28px;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 26px;
+    }
+
+    h2 {
+      margin-top: 36px;
+      font-size: 20px;
+    }
+
+    h3 {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+
+    p {
+      margin: 10px 0;
+      color: #d0d0d0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    code {
+      background: #1a1a1f;
+      padding: 3px 6px;
+      border-radius: 4px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 14px;
+      color: #f0f0f0;
+    }
+
+    pre {
+      background: #1a1a1f;
+      padding: 14px;
+      border-radius: 6px;
+      overflow-x: auto;
+      font-size: 14px;
+    }
+
+    .note {
+      background: #16161b;
+      border: 1px solid #2a2a2a;
+      padding: 14px;
+      border-radius: 6px;
+      margin: 18px 0;
+    }
+
+    .downloads a {
+      display: inline-block;
+      margin: 6px 10px 6px 0;
+      padding: 10px 16px;
+      border: 1px solid #3a3a3a;
+      border-radius: 6px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .downloads a:hover {
+      background: #222228;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 18px;
+      border-top: 1px solid #2a2a2a;
+      font-size: 14px;
+      color: #9a9a9a;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <strong>ShnDLP</strong>
+        <span class="subtitle">GUI Wrapper</span>
+      </div>
+
+      <a class="download-btn"
+         href="https://github.com/tayrp/shndlp/releases/latest"
+         download>
+        Download
+      </a>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <div class="container">
+    <h1>ShnDLP GUI Wrapper</h1>
+    <p>
+      ShnDLP is a lightweight <strong>graphical desktop application</strong> built on top of
+      <code>yt-dlp</code>. It runs quietly in the background and automatically downloads
+      supported videos when you copy a link to your clipboard.
+    </p>
+
+    <div class="note">
+      <strong>Requirement</strong><br>
+      <code>yt-dlp</code> must be installed and available in your system <strong>PATH</strong>.<br><br>
+      Verify installation:
+      <pre><code>yt-dlp --version</code></pre>
+    </div>
+
+    <h2>How it works</h2>
+    <ul>
+      <li>Launch the ShnDLP GUI application</li>
+      <li>Default configuration is enabled automatically</li>
+      <li>Copy a supported video or playlist URL</li>
+      <li>ShnDLP detects the link from your clipboard</li>
+      <li>The download begins automatically using yt-dlp</li>
+    </ul>
+
+    <h2>Features</h2>
+    <ul>
+      <li>Automatic clipboard monitoring</li>
+      <li>No command line usage required</li>
+      <li>Supports all sites handled by yt-dlp</li>
+      <li>Background downloads</li>
+      <li>Cross-platform (Windows, macOS, Linux)</li>
+    </ul>
+
+    <!--<h2>Downloads</h2>
+    <div class="downloads">
+      <a href="downloads/shndlp-gui-windows.zip" download>Windows</a>
+      <a href="downloads/shndlp-gui-macos.zip" download>macOS</a>
+      <a href="downloads/shndlp-gui-linux.tar.gz" download>Linux</a>
+      <a href="downloads/source.zip">Source code</a>
+    </div> -->
+
+    <h2>Installation</h2>
+
+    <h3>1. Install yt-dlp</h3>
+    <p>
+      Install yt-dlp using your preferred method and ensure it is on PATH:
+    </p>
+    <pre><code>pip install -U yt-dlp</code></pre>
+
+    <h3>2. Run ShnDLP</h3>
+    <ul>
+      <li>Extract the downloaded archive</li>
+      <li>Launch the ShnDLP application</li>
+      <li>Leave it running in the background</li>
+    </ul>
+
+    <h3>3. Copy a link</h3>
+    <p>
+      Copy any supported video or playlist URL.
+      ShnDLP will automatically start downloading it.
+    </p>
+
+    <h2>Configuration</h2>
+    <p>
+      ShnDLP includes a default configuration on first launch.
+      Advanced users may adjust:
+    </p>
+    <ul>
+      <li>Download location</li>
+      <li>Clipboard monitoring behavior</li>
+    </ul>
+
+    <h2>Notes</h2>
+    <ul>
+      <li>This application runs locally on your machine</li>
+      <li>No web service or server component</li>
+      <li>Follow applicable laws and site terms of service</li>
+    </ul>
+
+    <footer>
+      <p>
+        ShnDLP GUI Wrapper<br>
+        Requires <code>yt-dlp</code> installed and available on PATH<br>
+        License: All rights reserved.
+      </p>
+    </footer>
+  </div>
+</body>
+</html>

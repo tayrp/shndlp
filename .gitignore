@@ -3,7 +3,6 @@ dist/
 innosetup/
 scripts/
 cookies/
-web/
 logs/
 *.spec
 *.json
