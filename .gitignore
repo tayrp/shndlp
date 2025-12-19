@@ -1,0 +1,13 @@
+build/
+dist/
+innosetup/
+scripts/
+cookies/
+web/
+logs/
+*.spec
+*.json
+*.py
+*.pyw
+license.txt
+requirements.txt
