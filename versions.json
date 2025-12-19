@@ -1,0 +1,21 @@
+{
+  "latest": "1.1.0",
+  "releases": {
+    "1.1.0": {
+      "version": "1.1.0",
+      "published": "2025-01-10",
+      "download_url": "https://github.com/yourname/shndlp/releases/download/v1.1.0/shndlp-win.zip",
+      "changelog_url": "https://github.com/yourname/shndlp/releases/tag/v1.1.0",
+      "required": false,
+      "notes": "Improved updater stability, minor UI fixes"
+    },
+    "1.0.0": {
+      "version": "1.0.0",
+      "published": "2024-12-20",
+      "download_url": "https://github.com/yourname/shndlp/releases/download/v1.0.0/shndlp-win.zip",
+      "changelog_url": "https://github.com/yourname/shndlp/releases/tag/v1.0.0",
+      "required": false,
+      "notes": "Initial release"
+    }
+  }
+}
